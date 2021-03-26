@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/jpg" href="./Images/Binary image.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Decimal to Binary</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-md-centre">
+                <div class="col">
+                    <h1 class="p-3 mb-2 bg-white text-dark">
+                        <img src="./Images/Binary image.png" width="60" height="60">Binary to Decimal
+                    </h1>
+                    <span class="badge rounded-pill bg-primary">Newbie</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>How to convert decimal to binary
+                    Conversion steps:</h4>
+                    <p class="lead">
+                    <br>- Divide the number by 2.
+                    <br>- Get the integer quotient for the next iteration.
+                    <br>- Get the remainder for the binary digit.
+                    <br>- Repeat the steps until the quotient is equal to 0.
+                    </p>
+                    <hr>
+                    <img src="./Images/code_snippet.png">
+                </div>
+                <div class="col">
+                    <h6 class="p-3 mb-2 bg-dark text-white">Enter decimal to be converted to Binary</h6>
+                    <hr>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Decimal</span>
+                        <input id="decimal" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <br>
+                    <button id="submit" class="btn btn-success">Convert</button>
+                    <br><br>
+                    <p class="display-4" id="answer"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
